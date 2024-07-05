@@ -4,26 +4,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif; /* Modern font family */
     line-height: 1.6;
     color: #333;
     background-color: #f7f7f7; /* Soft gray background */
-}
-
-main {
+  }
+  
+  main {
     max-width: 800px;
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/* Card Styles */
-
-.card {
+  }
+  
+  /* Card Styles */
+  
+  .card {
     background-color: #fff;
     padding: 20px;
     margin: 20px;
@@ -31,46 +31,46 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s; /* Add a transition effect */
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a hover effect */
-}
-
-.card h2 {
+  }
+  
+  .card h2 {
     margin-top: 0;
     color: #666; /* Darker text color */
     font-weight: bold; /* Bold font weight */
-}
-
-/* Form Styles */
-
-.form-group {
+  }
+  
+  /* Form Styles */
+  
+  .form-group {
     margin-bottom: 20px;
-}
-
-.form-group label {
+  }
+  
+  .form-group label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold; /* Bold font weight */
     color: #333; /* Darker text color */
-}
-
-.form-group input, .form-group select {
+  }
+  
+  .form-group input, .form-group select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f7f7f7; /* Soft gray background */
     transition: border-color 0.3s; /* Add a transition effect */
-}
-
-.form-group input:focus, .form-group select:focus {
+  }
+  
+  .form-group input:focus, .form-group select:focus {
     border-color: #4CAF50; /* Green border color on focus */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a focus effect */
-}
-
-.btn-primary {
+  }
+  
+  .btn-primary {
     background-color: #4CAF50; /* Green background color */
     color: #fff;
     padding: 10px 20px;
@@ -78,44 +78,71 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s; /* Add a transition effect */
-}
-
-.btn-primary:hover {
+  }
+  
+  .btn-primary:hover {
     background-color: #3e8e41; /* Darker green background color on hover */
-}
-
-/* Balance Styles */
-
-.balance-display {
+  }
+  
+  /* Balance Styles */
+  
+  .balance-display {
     font-size: 24px;
     font-weight: bold;
     color: #666; /* Darker text color */
-}
-
-.balance-display::before {
+  }
+  
+  .balance-display::before {
     content: "Rp ";
     font-size: 18px; /* Smaller font size for the prefix */
     color: #999; /* Lighter text color for the prefix */
-}
-
-/* Additional Styles */
-
-main {
+  }
+  
+  /* Additional Styles */
+  
+  main {
     background-image: linear-gradient(to bottom, #f7f7f7, #fff); /* Soft gradient background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
-}
-
-header {
+  }
+  
+  header {
     background-color: #4CAF50; /* Green background color */
     padding: 10px;
     text-align: center;
     border-radius: 10px 10px 0 0; /* Rounded corners */
-}
-
-header h1 {
+  }
+  
+  header h1 {
     color: #fff; /* White text color */
     font-weight: bold; /* Bold font weight */
     margin: 0;
-}
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    main {
+      max-width: 100%;
+      margin: 20px;
+    }
+    .card {
+      margin: 10px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      margin: 10px;
+    }
+    .card {
+      margin: 5px;
+    }
+    .form-group {
+      margin-bottom: 5px;
+    }
+  }
