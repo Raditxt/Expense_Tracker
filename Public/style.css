@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7; /* Soft gray background */
 }
 
 main {
@@ -30,10 +30,17 @@ main {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s; /* Add a transition effect */
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a hover effect */
 }
 
 .card h2 {
     margin-top: 0;
+    color: #666; /* Darker text color */
+    font-weight: bold; /* Bold font weight */
 }
 
 /* Form Styles */
@@ -45,6 +52,8 @@ main {
 .form-group label {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Darker text color */
 }
 
 .form-group input, .form-group select {
@@ -52,19 +61,27 @@ main {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #f7f7f7; /* Soft gray background */
+    transition: border-color 0.3s; /* Add a transition effect */
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #4CAF50; /* Green border color on focus */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a focus effect */
 }
 
 .btn-primary {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green background color */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition effect */
 }
 
 .btn-primary:hover {
-    background-color: #3e8e41;
+    background-color: #3e8e41; /* Darker green background color on hover */
 }
 
 /* Balance Styles */
@@ -72,9 +89,33 @@ main {
 .balance-display {
     font-size: 24px;
     font-weight: bold;
-    color: #666;
+    color: #666; /* Darker text color */
 }
 
 .balance-display::before {
     content: "Rp ";
+    font-size: 18px; /* Smaller font size for the prefix */
+    color: #999; /* Lighter text color for the prefix */
+}
+
+/* Additional Styles */
+
+main {
+    background-image: linear-gradient(to bottom, #f7f7f7, #fff); /* Soft gradient background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+header {
+    background-color: #4CAF50; /* Green background color */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Rounded corners */
+}
+
+header h1 {
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold font weight */
+    margin: 0;
 }
